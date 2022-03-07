@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcula tu peso en html</title>
+
+    <style>
+        body {
+            background-color: #000000;
+            color : white;
+            font-family: Helvetica;
+        }
+        strong {
+            background-color: #0072f5;
+        }
+        </style>
+</head>
+<body>
+    <h1>Calcula tu peso en otro planeta</h1>
+    <p>Tu peso en la <strong>Tierra</strong> es diferente al de Jupiter y Marte</p>    
+
+    <script type="text/javascript">
+
+        var g_tierra = 9.8,  g_marte = 3.7,  g_jupiter = 24.8;
+
+        var peso = parseFloat(prompt("Ingresa tu peso en kg"));
+
+        
+
+        var peso_en_planeta = peso * g_marte / g_tierra;
+
+        var peso_en_planeta2 = peso * g_jupiter / g_tierra;
+
+        var peso_en_planeta = parseInt(peso_en_planeta);
+
+        
+
+        document.write("Tu peso en marte es: <strong>" + peso_en_planeta + "kg</strong>");
+
+        document.write("<br>");
+
+        document.write("Tu peso en jupiter es: <strong>" + peso_en_planeta2 + " kg</strong>");
+
+        </script>
+</body>
+</html>
